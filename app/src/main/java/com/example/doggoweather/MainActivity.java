@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout Background;
 
     String OPEN_WEATHER_API = "81b310dc7bf0f573e22321a3518e3211";
+    //API Key
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
