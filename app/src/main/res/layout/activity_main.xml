@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Background"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/DogSafety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:layout_below="@+id/typeCity"
+        android:gravity="center"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/DogTimer"
+        android:layout_width="wrap_content"
+        android:textSize="45sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_below="@+id/DogSafety"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/typeCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change City"
+        android:textStyle="italic"
+        android:textSize="11dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/update"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/current_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/details_For_City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
