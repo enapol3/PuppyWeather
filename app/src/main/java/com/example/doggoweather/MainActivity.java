@@ -20,6 +20,7 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+//Main Activity method for my app.
 public class MainActivity extends AppCompatActivity {
     TextView typeCity, cityName, detailsForCity, temperatureField, update, DogSafety, DogTimer;
     ProgressBar load;
