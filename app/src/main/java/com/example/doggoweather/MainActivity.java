@@ -117,41 +117,50 @@ public class MainActivity extends AppCompatActivity {
                         DogSafety.setText("Have fun outside!");
                         Background.setBackgroundColor(Color.parseColor("#1B5E20"));
                         DogTimer.setText("Be careful of hot weather!");
+                        //Level 0 Range (Unlimited Time)
                     }
                     if (tempet <= 60.0 && tempet >= 50.0) {
                         DogSafety.setText("No Evidence of Risk; Have fun outside!");
                         Background.setBackgroundColor(Color.parseColor("#7986CB"));
                         DogTimer.setText("Come in whenever you like!");
+                        //Level 1 Range
                     }
                     if (tempet < 50.0 && tempet >= 45.0) {
                         DogSafety.setText("Risk is Unlikely; Have fun outside, but be careful!");
                         Background.setBackgroundColor(Color.parseColor("#5C6BC0"));
                         DogTimer.setText("Come in whenever you like: Recommend 1 hour!");
+                        //Level 2 Range
                     }
                     if (tempet < 45.0 && tempet >= 30.0) {
                         DogSafety.setText("Uncomfortable Depending on breed. Keep an eye on your pet.");
                         Background.setBackgroundColor(Color.parseColor("#3F51B5"));
                         DogTimer.setText("30 Minutes!");
+                        //Level 3 Range
                     }
                     if (tempet < 30.0 && tempet >= 25.0) {
                         DogSafety.setText("Unsafe depending on breed. Keep an eye on your pet.");
                         Background.setBackgroundColor(Color.parseColor("#3949AB"));
                         DogTimer.setText("20 - 30 minutes!");
+                        //Level 4 Range
                     }
                     if (tempet < 25.0 && tempet >= 15.0) {
                         DogSafety.setText("Dangerous weather developing. Limit time outside!");
                         Background.setBackgroundColor(Color.parseColor("#303F9F"));
                         DogTimer.setText("10 - 20 minutes!");
+                        // Level 5 Range
                     }
                     if (tempet < 15.0 && tempet >= 10.0) {
                         DogSafety.setText("Dangerous weather! Limit time outside to prevent frostbite!");
                         Background.setBackgroundColor(Color.parseColor("#283593"));
                         DogTimer.setText("Less than 10 minutes!");
+                        //Level 6 Range
                     }
                     if (tempet < 10) {
                         DogSafety.setText("Potentially life-threatening cold. Avoid prolonged outdoor activity");
                         Background.setBackgroundColor(Color.parseColor("#B71C1C"));
                         DogTimer.setText("Go out, do your business, come in!");
+                        //Level 7 Range
+                        //As number of level increases, time outside decreases
                     }
                     //Sets the text to use for the text view.
                     cityName.setText(json.getString("name").toUpperCase(Locale.US) + ", " + json.getJSONObject("sys").getString("country"));
